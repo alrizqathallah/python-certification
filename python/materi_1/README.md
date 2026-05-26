@@ -306,6 +306,84 @@ isinstance(42, int) # True
 isinstance('John Doe', int) # False
 ```
 
+### Bagaimana Fungsi `type()` dan `isinstance()` bekerja?
+
+Pada materi sebelumnya, kita telah mempelajari tipe data apa saja yang ada di Python seperti string, integer dan float. 
+
+Berikut contoh:
+
+```python
+developer = 'Devin'
+```
+
+Untuk mengetahui apa tipe data dari varibel `developer`, kita bisa menggunakan fungsi `type()` untuk mengetahuinya:
+
+```python
+developer = 'Devin'
+
+print(type(developer))  # <class 'str'>
+```
+
+Hasil `<class 'str'>` berarti variabel `developer` memiliki jenis tipe data *string*.
+
+Jika kita salah memasukkan argumen kedalam fungsi, maka kita akan menerima pesan error seperti berikut:
+
+```
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: type() takes 1 or 3 arguments
+```
+
+Berikut macam tipe yang kita bisa dapatkan:
+
+```python
+my_integer_var = 10
+print(type(my_integer_var))  # <class 'int'>
+
+my_float_var = 4.50
+print(type(my_float_var))  # <class 'float'>
+
+my_string_var = 'hello'
+print(type(my_string_var))  # <class 'str'>
+
+my_boolean_var = True
+print(type(my_boolean_var))  # <class 'bool'>
+
+my_set_var = {7, 'hello', 8.5}
+print(type(my_set_var))  # <class 'set'>
+
+my_dictionary_var = {'name': 'Alice', 'age': 25}
+print(type(my_dictionary_var))  # <class 'dict'>
+
+my_tuple_var = (7, 'hello', 8.5)
+print(type(my_tuple_var))  # <class 'tuple'>
+
+my_range_var = range(5)
+print(type(my_range_var))  # <class 'range'>
+
+my_list = [22, 'Hello world', 3.14, True]
+print(type(my_list)) # <class 'list'>
+
+my_none_var = None
+print(type(my_none_var))  # <class 'NoneType'>
+```
+
+Dalam beberapa kasus kita perlu memastikan bahwa sebuah variabel memiliki tipe data tertentu, sebelum kita bisa melakukan operasi terhadap varibel tersebut. Untuk kebutuhan itu kita bisa menggunakan fungsi `isinstance()`.
+
+Berikut contohnya:
+
+```python
+account_balance = '12'
+```
+
+Jika kita mencoba melakukan operasi pembagian terhadap varibel `account_balance`, kita mungkin akan mendapatkan pesan *error*, Maka dari itu kita perlu memastikan variabel tersebut merupakan varibel bertipe data *integer*, agar dapat dioperasikan dengan operator matematika.
+
+```python
+account_balance = '12'
+
+isinstance(account_balance, int)    # False
+```
+
 ## Workshop: Membangun "Report Card Printer"
 
 ```python
