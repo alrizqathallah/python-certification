@@ -309,3 +309,16 @@ Nama saya Bengs
 Umur saya 28
 Hobi saya Coding
 ```
+
+### Insight Level Up
+
+Sekarang kita sudah pahama:
+
+* Varibel
+* Tipe data dasar
+* Perbedaan angka vs string
+* Cara print yang fleksibel
+
+---
+
+## 1.3 Operator
