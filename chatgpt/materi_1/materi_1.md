@@ -137,3 +137,175 @@ Tanpa sadar kita sudah paham:
 
 ## 1.2 Varibel dan Tipe Data
 
+### Apa itu Variabel?
+
+Variabel itu seperti **kotak penyimpanan**.
+
+**Ananlogi**:
+
+Bayangkan kita punya kota berlabel:
+
+* `nama`
+* `umur`
+
+Di dalamnya kita bisa isi data.
+
+### Contoh Variabel
+
+```python
+nama = "Bengs"  # String
+umur = 28       # Integer
+```
+
+**Penjelasan**:
+
+* `nama` -> variabel
+* `"Bengs"` -> isi data (string)
+* `umur` -> variabel
+* `28` -> angka (integer)
+
+### Menampilkan Variabel
+
+```python
+nama = "Bengs"
+umur = 28
+
+print(nama)
+print(umur)
+```
+
+```output
+Bengs
+28
+```
+
+### Tipe Data Dasar
+
+| Tipe | Contoh | Penjelasan |
+|------|--------|------------|
+| `str` | `"Halo"` | Teks |
+| `int` | `10` | Bilangan bulat |
+| `float` | `3.14` | Desimal |
+| `bool` | `True`/`False` | Benar/Salah |
+
+### Cek Tipe Data
+
+```Python
+nama = "Bengs"
+umur = 28
+
+print(type(nama))
+print(type(umur))
+```
+
+```Output
+<class 'str'>
+<class 'int'>
+```
+
+### Latihan 1
+
+Buat Variabel:
+
+* `nama` = Nama
+* `umur` = Umur
+* `tinggi` = tinggi badan (boleh desimal)
+
+Lalu tampilkan semuanya.
+
+### Latihan 2
+
+Tentukan tipe data dari:
+
+```Python
+a = "10"
+b = 10
+c = 10.5
+d = True
+```
+
+Tuliskan:
+
+* a = ?
+* b = ?
+* c = ?
+* d = ?
+
+### Latihan 3
+
+```Python
+x = 5
+y = "5"
+
+print(x)
+print(y)
+```
+
+### Mini Project
+
+Buat program **BIODATA versi variabel**:
+
+```python
+nama = ...
+umur = ...
+hobi = ...
+
+# tampilkan seperti ini:
+Nama saya ...
+Umur saya ...
+Hobi saya ...
+```
+
+### Jawaban
+
+**Latihan 1**:
+
+```Python
+nama = "Bengs"
+umur = 28
+tinggi = 172.5
+
+print(nama)
+print(umur)
+print(tinggi)
+```
+
+```Terminal
+Bengs
+28
+172.5
+```
+
+**Latihan 2**:
+
+```
+a = `str`
+b = `int`
+c = `float`
+d = `bool`
+```
+
+**Latihan 3**:
+
+```Terminal
+5
+5
+```
+
+**Mini Project**:
+
+```Python
+nama = "Bengs"
+umur = 28
+hobi = "Coding"
+
+print("Nama saya", nama)
+print("Umur saya", umur)
+print("Hobi saya", hobi)
+```
+
+```Terminal
+Nama saya Bengs
+Umur saya 28
+Hobi saya Coding
+```
